@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Emoji Generator</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div>
+    <h1 id="man" onclick="fun()">Random Emoji Generator</h1>
+    <button onclick="generateEmojis()"> Click Here to genrate the emojis</button>
+      <div id="man1">
+        
+
+
+      </div>
+</div>
+    
+
+
+
+
+<script>
+
+ let box = document.getElementById("man1")
+ var emojis = ["https://www.eventstodayz.com/wp-content/uploads/2020/01/Love-kiss-gif.gif ",
+    "https://www.icegif.com/wp-content/uploads/2022/10/icegif-377.gif ",
+    "https://media.tenor.com/c1ZPBnuR_gsAAAAM/emoji-eye-roll.gif ",
+    "https://media.tenor.com/c1ZPBnuR_gsAAAAM/emoji-eye-roll.gif",
+    "https://static.wikia.nocookie.net/fridaynightfunking/images/8/8e/CECryingEmojiIdle.gif/revision/latest?cb=20230203174602",
+    "https://pic.funnygifsbox.com/uploads/2019/01/funnygifsbox.com-2019-01-26-10-56-25-99.gif","https://3.bp.blogspot.com/-E-VD1ooFQ4U/WLupPPB2DQI/AAAAAAAAVB4/CL2iZDormlQhR66c2cmQ8LGoTRqGwXUzgCLcB/s1600/breakfast-emoji.gif"
+    ]
+ function generateEmojis(){
+   
+   let index = Math.floor(Math.random()*emojis.length)
+   let url = emojis[index]  
+  
+    box.innerHTML= box.innerHTML+ `<img width="351px" src='${url}'/>`
+
+ }
+ 
+
+
+
+
+
+
+
+
+
+    function fun(){
+        let g= document.getElementById("man")
+        g.style.color="Brown"
+    }
+
+</script>
+</body>
+</html>
